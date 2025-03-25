@@ -1,0 +1,17 @@
+h1{
+    text-transform:capitalize;
+    text-align:center;
+}
+/* Q1 */
+
+p{
+    font-family:Times 'Times New Roman', Times, serif;
+}
+
+#outer{
+    font-size:25px;
+}
+
+#inner{
+    font-size:outer;
+}

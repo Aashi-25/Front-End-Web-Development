@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>REGISTRATION FORM</h2>
+    <form>
+        <form action="/action.php">
+            <input type="text" placeholder="Username"></br></br>
+            <input type="password" placeholder="Password">
+
+        </br></br> 
+            <b><caption>Select your class:</caption></b>
+            <!--RADIO BUTTONS-->
+            <input type="radio" value="class XI" name="class">class XI
+
+            <input type="radio" value="class XII" name="class">class XII
+
+        </br></br>
+
+            <b><caption>Select your gender:</caption></b> 
+            <!--USE OF LABEL-->
+            <label for="101">
+                <input type="radio" value="XI" name="class" id="101">MALE
+            </label>
+
+            <label for="102">
+                <input type="radio" value="XII" name="class" id="102">FEMALE
+            </label>
+
+        </br></br>
+
+            <b><caption>Select fav subjects:</caption></b>
+            <!--USE OF CHECKBOXES-->
+            <label for="math">
+                <input type="checkbox" value="math" name="class" id="101">math
+            </label>
+            <label for="physics">
+                <input type="checkbox" value="math" name="class" id="102">physics
+            </label>
+            <label for="chemistry">
+                <input type="checkbox" value="math" name="class" id="103">chemistry
+            </label>
+            <label for="english">
+                <input type="checkbox" value="math" name="class" id="104">english
+            </label>
+            <label for="hindi">
+                <input type="checkbox" value="math" name="class" id="105">hindi
+            </label>
+            <label for="cs">
+                <input type="checkbox" value="math" name="class" id="106">cs
+            </label>
+        </br></br>
+
+        <!--USE OF SELECT TAG-->
+        <caption><b>Select your city:</b></caption>
+        <select name="city">
+            <option value="DELHI">Delhi</option>
+            <option value="MUMBAI">Mumbai</option>
+            <option value="BANGLORE">Banglore</option>
+        </select>
+
+    </br></br>
+
+
+            <!--USE OF TEXTAREA-->
+            <b><caption>Enter your feedback:</caption></b></br></br>
+            <textarea name="feedback" id="101" placeholder="please give your valuable feedback here.Let us know the areas of improvement if any." rows="5" columns="10"></textarea>
+</br></br>
+
+            <input type="submit" value="submit">
+        </form>
+</body>
+
+</html>

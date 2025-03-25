@@ -1,0 +1,46 @@
+h1{
+    color: red;
+    text-align:center;
+    text-decoration:underlin e;
+}
+
+p{
+    color:rgb(245, 239, 240);
+}
+button{
+    color:blueviolet;
+    background-color:orange;
+
+}
+
+body{
+    background-color:rgb(21, 27, 86);
+}
+#headingthree{
+    color:#2be27d;
+}
+
+#one{
+    text-align:center;
+    font-family:comic sans ms;
+    font-size: 25px;
+    line-height:normal;
+    text-transform:capitalize;
+}
+
+a{
+    text-decoration:none; /*to remove the by default underline from anchor tag link*/
+}
+
+#h1{
+    font-weight:150;
+
+}
+
+#h2{
+    font-weight:bolder;
+}
+
+#h3{
+    font-weight:100;
+} 

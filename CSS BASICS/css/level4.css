@@ -1,0 +1,66 @@
+body{
+    text-align:center;
+}
+
+div{
+    height:100px;
+    width:150px;
+    display:inline-block;
+    border:2px solid black;
+}
+
+#container{
+    width:600px;
+    height:600px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    flex-wrap:wrap;
+    align-items:center;
+    align-content:center;
+}
+
+#box1{
+    background-color:aqua;
+    height:100px;
+    align-self:flex-start;
+}
+
+#box2{
+    background-color: pink;
+    height:200px;
+}
+
+#box3{
+    background-color:darkkhaki;
+    height:75px;
+}
+
+#box4{
+    background-color:indianred;
+}
+
+#box5{
+    background-color:slateblue;
+}
+
+#responsive{
+    height:50px;
+    width:50px;
+    background-color:bisque;
+    margin:50px;
+}
+
+@media(width:600px){
+    #responsive{
+        background-color:red; /*changes the colour of box to red when the width of screen is 600px*/
+    }
+}
+
+@media(min-width:200px) and (max-width:300px){
+    #box2{
+        background-image:url(photo.jpg);
+        background-size: cover;
+    }
+}
+

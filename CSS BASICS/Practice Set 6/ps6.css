@@ -1,0 +1,33 @@
+.navbar{
+    background-color:pink;
+    display:flex;
+    justify-content:space-evenly;
+}
+
+a{
+    text-decoration:none;
+    color:red;
+    /* background-color:white; */
+}
+
+li{
+    list-style-type:none; /*to remove the dots from the list items*/
+    display:inline;
+}
+
+.outer{
+    height:400px;
+    width:400px;
+    background-color:cornflowerblue;
+    display:flex;
+    justify-content:center;/*to align items along the main(horizontal axis)*/
+    align-items:center;/*to align items along the cross(vertical) axis*/
+    
+}
+
+.inner{
+    height:100px;
+    width:100px;
+    background-color:darkorchid;
+    /* align-self:flex-start; has higher precedence than align items */
+}
