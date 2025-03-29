@@ -18,6 +18,7 @@ function App() {
           Learn React
         </a>
       </header>
+      {/* <h1>Hello React from create react app</h1> */}
     </div>
   );
 }
