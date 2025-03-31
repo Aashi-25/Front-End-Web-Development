@@ -1,1 +1,6 @@
 all the componens logic and application logic stays inside the source folder.
+#Learnings till now:-
+how one can use useState for state management
+how one can use useEffect for side-effects
+how one can call api on page load using useEffect keeping the dependency as empty
+how one can fetch data (api data) by  clicking on a buton
