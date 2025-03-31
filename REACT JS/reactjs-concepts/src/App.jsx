@@ -8,6 +8,7 @@ import ClassBasedComponents from "./components/class-based-components"
 import FunctionalComponents, {FunctionalComponent_2} from "./components/functional-components.jsx"
 
 import ProductList from "./components/products";
+import Users from './components/users/index.jsx';
 
 
 const dummyProductData = ['Product1' , 'Product2' , 'Product3'];
@@ -24,8 +25,10 @@ function App() {
       {/* <FunctionalComponents/>
       <FunctionalComponent_2/> */}
 
-      <ProductList dummyProductData={dummyProductData} name = "Aashi" city="Delhi"/>
+      {/* <ProductList dummyProductData={dummyProductData} name = "Aashi" city="Delhi"/> */}
       {/* passing props */}
+
+      <Users/>
     </div>
   )
 }
