@@ -9,6 +9,8 @@ import FunctionalComponents, {FunctionalComponent_2} from "./components/function
 
 import ProductList from "./components/products";
 import Users from './components/users/index.jsx';
+import ContextButtonComponent from './components/context-concept/button.jsx';
+import ContextTextComponent from './components/context-concept/text.jsx';
 
 
 const dummyProductData = ['Product1' , 'Product2' , 'Product3'];
@@ -20,7 +22,7 @@ function App() {
   return (
     <div>
       <h1>React JS concepts 2025</h1>
-      <ClassBasedComponents/>
+      {/* <ClassBasedComponents/> */}
       
       {/* <FunctionalComponents/>
       <FunctionalComponent_2/> */}
@@ -28,7 +30,10 @@ function App() {
       {/* <ProductList dummyProductData={dummyProductData} name = "Aashi" city="Delhi"/> */}
       {/* passing props */}
 
-      <Users/>
+      {/* <Users/> */}
+
+      <ContextButtonComponent/>
+      <ContextTextComponent/>
     </div>
   )
 }
