@@ -11,6 +11,7 @@ import ProductList from "./components/products";
 import Users from './components/users/index.jsx';
 import ContextButtonComponent from './components/context-concept/button.jsx';
 import ContextTextComponent from './components/context-concept/text.jsx';
+import UseReducerExample from './components/user-reducer.jsx';
 
 
 const dummyProductData = ['Product1' , 'Product2' , 'Product3'];
@@ -32,8 +33,10 @@ function App() {
 
       {/* <Users/> */}
 
-      <ContextButtonComponent/>
-      <ContextTextComponent/>
+      {/* <ContextButtonComponent/>
+      <ContextTextComponent/> */}
+
+      <UseReducerExample />
     </div>
   )
 }

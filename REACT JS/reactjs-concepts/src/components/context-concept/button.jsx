@@ -3,8 +3,10 @@ import { GlobalContext } from "../../context";
 
 function ContextButtonComponent(){
 
-    const {theme , setTheme} = useContext(GlobalContext);
-    return <button onClick = {() => setTheme(theme === "light" ? "dark" : "light")}>Change Theme</button>
+    const {handleChangeThemeOnButtonClick, theme} = useContext(GlobalContext);
+    return(
+         <button onClick = {handleChangeThemeOnButtonClick}> ChangeTheme </button>
+    );
 }
 
 export default ContextButtonComponent;

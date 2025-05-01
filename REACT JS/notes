@@ -3,4 +3,12 @@ all the componens logic and application logic stays inside the source folder.
 how one can use useState for state management
 how one can use useEffect for side-effects
 how one can call api on page load using useEffect keeping the dependency as empty
-how one can fetch data (api data) by  clicking on a buton
+how one can fetch data (api data) by  clicking on a button
+
+timestamp :- 2:58:16
+topics covered till here:-
+how to create components
+how to pass data using props
+how to do state management both in class based and functional components
+how to manage life cycle methods in class based components
+hooks , useState , useReducer , useEffect , useContext

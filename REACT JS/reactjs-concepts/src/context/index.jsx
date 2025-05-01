@@ -4,8 +4,14 @@ import { createContext, useState } from "react";
 export const GlobalContext = createContext(null);
 
 //create the global state that receive component as children
-export default function GlobalState({children}){
+function GlobalState({children}){
 
     const [theme , setTheme] = useState('light');
-    return <GlobalContext.Provider value = {{ theme , setTheme }}>{children}</GlobalContext.Provider>
+
+    function handleChangeThemeOnButtonClick () {
+        setTheme(theme === 'light' ? 'dark' : 'light')
+    }
+    return <GlobalContext.Provider value = {{ theme , handleChangeThemeOnButtonClick }}>{children}</GlobalContext.Provider>
 }
+
+export default GlobalState;
