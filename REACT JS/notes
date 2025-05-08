@@ -12,3 +12,5 @@ how to pass data using props
 how to do state management both in class based and functional components
 how to manage life cycle methods in class based components
 hooks , useState , useReducer , useEffect , useContext
+
+useFetch custom hook can also be implemented through swr hook(practice later)
