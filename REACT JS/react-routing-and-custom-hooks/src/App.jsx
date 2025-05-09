@@ -5,6 +5,7 @@ import { Link, Route, Routes, useNavigate, useRoutes } from 'react-router-dom'
 import RecipeDetails from './pages/recipe-details';
 import NotFoundPage from './pages/not-found';
 import Layout from './components/layout';
+import ReactHookForm from './pages/react-hook-form';
 
 function CustomRoutes() {
   const element = useRoutes([
@@ -18,6 +19,10 @@ function CustomRoutes() {
     } ,
     { 
       path: '*', element: <NotFoundPage /> 
+    },
+    {
+      path : '/react-hook-form',
+      element : <ReactHookForm/>
     }
   ])
   return element;
@@ -28,7 +33,7 @@ function App() {
   const Navigate = useNavigate();
   return (
     <div>
-      <h1>React Routing, Custom Hooks and more</h1>
+      {/* <h1>React Routing, Custom Hooks and more</h1>
       <div>
         <Link to={'/home/recipe-list'} style={{ marginLeft: '600px' }}>Alternative way of navigating to recipe list page</Link>
       </div>
@@ -38,7 +43,7 @@ function App() {
       </button>
       <button onClick={() => Navigate('/home/comments-list')} style={{ background: 'black', color: 'white', fontSize: '20px' }}>
         Navigate to Comments List page
-      </button>
+      </button> */}
       {/* <Routes>
 
         <Route path='/' element={<h2 style={{ textAlign: 'center' }}>Welcome! Use the links above to navigate.</h2>} />
