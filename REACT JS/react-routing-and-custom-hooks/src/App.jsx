@@ -9,6 +9,7 @@ import ReactHookForm from './pages/react-hook-form';
 import Hooks from './pages/react-hook-form/hooks';
 import UseMemoExample from './pages/UseMemo';
 import UseCallback from './pages/UseCallback';
+import ReactQuery from './pages/react-query';
 
 function CustomRoutes() {
   const element = useRoutes([
@@ -38,6 +39,10 @@ function CustomRoutes() {
     {
       path : '/usecallback',
       element : <UseCallback/>
+    },
+    {
+      path : '/reactquery' , 
+      element : <ReactQuery/>
     }
   ])
   return element;
