@@ -6,6 +6,7 @@ import RecipeDetails from './pages/recipe-details';
 import NotFoundPage from './pages/not-found';
 import Layout from './components/layout';
 import ReactHookForm from './pages/react-hook-form';
+import Hooks from './pages/react-hook-form/hooks';
 
 function CustomRoutes() {
   const element = useRoutes([
@@ -23,6 +24,10 @@ function CustomRoutes() {
     {
       path : '/react-hook-form',
       element : <ReactHookForm/>
+    },
+    {
+      path : "/hooks",
+      element : <Hooks/>
     }
   ])
   return element;
