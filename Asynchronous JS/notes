@@ -1,0 +1,24 @@
+To Dos:-
+what is sync and async?
+sync means one after the other..jab tak ek command pura nahi hoga dusra kaam start nhi hoga
+async means all commands would be started together , jiska ans pehle aajaye uska ans dedena
+
+how to identify async or sync code?
+-> Async code includes either of these:- setTimeout/setInterval/promises/fetch/axios/XMLHttpRequest
+
+what is async js?
+kai baar apka final code dependent hota hai kisi aur ke server pr,is case meh humme nahi pata hota ki answer uske server se kab laut ke ayega , as a result we cannot write sync code, and end up writing async code to avoid any sort of  blocking and as soon as some ans is received our code runs in that respect smoothly.
+
+js is not asynchronous
+async ki poori kahani
+single threading and multi threading
+callbacks
+promises
+then and catch
+try and catch
+async await
+5 use cases ekdam real world wale
+
+[concept aside]
+concurrency and parallelism
+throttling
