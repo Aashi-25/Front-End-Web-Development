@@ -9,10 +9,14 @@ how to identify async or sync code?
 what is async js?
 kai baar apka final code dependent hota hai kisi aur ke server pr,is case meh humme nahi pata hota ki answer uske server se kab laut ke ayega , as a result we cannot write sync code, and end up writing async code to avoid any sort of  blocking and as soon as some ans is received our code runs in that respect smoothly.
 
-js is not asynchronous
-async ki poori kahani
-single threading and multi threading
-callbacks
+js is not asynchronous :- can be proved through a code eg written in script.js
+async ki poori kahani :- main stack(sync content) and side stack(async content) 
+single threading and multi threading :- js is single threaded
+
+callbacks - hamesha ek function hota hai , yeh sirf tab chalta h jab async code ka completion ho jata hai 
+
+-> fetch , axios , promises , setTimeout , setInternval request ko bhejte hai 
+-> jab request complete ho jaaye, unka ans hota hai inn functions k pass -> then-catch , callback , async-await
 promises
 then and catch
 try and catch
@@ -20,5 +24,6 @@ async await
 5 use cases ekdam real world wale
 
 [concept aside]
-concurrency and parallelism
-throttling
+concurrency :- js meh sync code and async code ek saath process hona and parallelism :- mainly deals with ur processors cores
+
+throttling 
