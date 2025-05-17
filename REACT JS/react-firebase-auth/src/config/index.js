@@ -14,7 +14,7 @@ export const registerFormControls = [
     {
         name: 'password',
         placeholder: 'Enter your password',
-        componentType: 'password',
+        componentType: 'input',
         type: 'password'
     },
     {
@@ -33,4 +33,22 @@ export const registerFormControls = [
         componentType: 'textarea',
         rows: 4,
     }
+];
+
+export const loginFormControls = [
+
+
+    {
+        name: 'email',
+        placeholder: 'Enter your email',
+        componentType: 'input',
+        type: 'email'
+    },
+    {
+        name: 'password',
+        placeholder: 'Enter your password',
+        componentType: 'input',
+        type: 'password'
+    }
+
 ]

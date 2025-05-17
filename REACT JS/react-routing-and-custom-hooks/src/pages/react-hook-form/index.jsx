@@ -5,9 +5,26 @@ function ReactHookForm() {
 
     const { register, handleSubmit, formState: { errors } , reset } = useForm();
 
-    function onSubmitForm(data){
-        console.log(data);
-        reset();
+    async function onSubmitForm(data){
+        try {
+            const response = await fetch('YOUR_API_ENDPOINT_HERE', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            });
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
+            const result = await response.json();
+            console.log('Success:', result);
+            reset();
+        } catch (error) {
+            console.error('Error:', error);
+        }
     }
   return (
     <div>

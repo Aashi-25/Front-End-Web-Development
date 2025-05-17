@@ -23,7 +23,7 @@ function CommonForm({ formControls = [], buttonText, formData, setFormData, onSu
                         name={getCurrentFormControl.name}
                         onChange={(event) =>
                             setFormData({
-                                ...FormData,
+                                ...formData,
                                 [getCurrentFormControl.name]: event.target.value
                             })
                         }
@@ -38,7 +38,7 @@ function CommonForm({ formControls = [], buttonText, formData, setFormData, onSu
                         options={getCurrentFormControl.options}
                         onChange={(event) =>
                             setFormData({
-                                ...FormData,
+                                ...formData,
                                 [getCurrentFormControl.name]: event.target.value
                             })
                         }
@@ -50,17 +50,18 @@ function CommonForm({ formControls = [], buttonText, formData, setFormData, onSu
             case formElementTypes.TEXTAREA:
                 element = (
                     <CommonTextArea
-                        vslue={getFormData[getCurrentFormControl.name]}
+                        value={getFormData[getCurrentFormControl.name]}
                         placeholder={getCurrentFormControl.placeholder}
                         onChange={(event) =>
                             setFormData({
-                                ...FormData,
+                                ...formData,
                                 [getCurrentFormControl.name]: event.target.value
                             })
                         }
                         rows={getCurrentFormControl.rows || 4}
                     />
                 )
+                break;
 
 
             default:
